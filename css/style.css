@@ -1,0 +1,40 @@
+.validaHora {
+  font-weight: 790;
+}
+
+
+
+.img-background {
+    background-color: white;
+    background-size: 1366px 768px;
+}
+
+.f-login {
+opacity: 0.75;
+  filter: alpha(opacity=100);
+}
+
+.span-size{
+  padding: 8px 4px 3px 0px;
+    margin: 33px 32px 34px 0px;
+    font-size: 37px;
+}
+
+.data-picker{
+  margin-left: -13px;
+  margin-bottom: -16px;
+}
+
+.offset-md-4 {
+  margin-left: 34.333333%;
+}
+
+h1.nomeUsuario {
+  font-size: 17px;
+  margin-top: 11px;
+  padding-left: 3px;
+}
+
+.txtNegrito {
+  font-weight: bold;
+}
