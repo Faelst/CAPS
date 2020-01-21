@@ -1,0 +1,3 @@
+* .css detectável por linguistas = false
+* .js linguist-detectable = true
+* .java linguist-detectable = false
