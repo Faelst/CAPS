@@ -2,17 +2,19 @@
 
 var flag;
 var contadorFlag;
-var PopularTecnico=[];
+var PopularTecnico = [];
+
+$("#btnListar").click(function (e) {
+  e.preventDefault();
+  window.location = "./Listagem.php";
+});
 
 $(document).ready(function () {
 
-// Fazer Chamada da Pagina
+  // Fazer Chamada da Pagina
+  
 
-$("#btnListar").click(function(){
-    window.location="./Listagem.php";
-  });
-
-// VALIDAR CAMPO DE INSERÇÃO DA PAGINA "CONTROLE.PHP"
+  // VALIDAR CAMPO DE INSERÇÃO DA PAGINA "CONTROLE.PHP"
 
   $("#nomeTecnico").css("border-color", "orange");
   $("#timepicker4").css("border-color", "orange");
@@ -32,28 +34,29 @@ $("#btnListar").click(function(){
   });
 
 
-  
+
   $.ajax({
-        type: 'GET',		    //Definimos o método HTTP usado
-        dataType: 'json',	            //Definimos o tipo de retorno
-        url: './php/PopularTecnico.php',    //Definindo o arquivo onde serão buscados os dados
-        success: function (dados) {
-            for (var i = 0; dados.length > i; i++) {
-                //Adicionando registros retornados na tabela
-                PopularTecnico[i] = dados[i].nome_tecnico;
-                
-              }
-        },
-        error: function (request, status, error) {
-            alert(request.responseText);
-        }
-    });
+    type: 'GET',		    //Definimos o método HTTP usado
+    dataType: 'json',	            //Definimos o tipo de retorno
+    url: './php/PopularTecnico.php',    //Definindo o arquivo onde serão buscados os dados
+    success: function (dados) {
+      for (var i = 0; dados.length > i; i++) {
+        //Adicionando registros retornados na tabela
+        PopularTecnico[i] = dados[i].nome_tecnico;
+
+      }
+
+    },
+    error: function (request, status, error) {
+      alert(request.responseText);
+    }
+  });
 
   //VALIDAR CAMPOS DE ENTRADA
 
   $("#btnCadastrar").click(function (e) {
 
-   
+
     contadorFlag = 0;
 
     validarCampo("#timepicker4", ".validaHora");
@@ -82,10 +85,9 @@ $("#btnListar").click(function(){
     } else {
       flag = false
     }
-
   });
-
 });
+
 
 export { flag };
 

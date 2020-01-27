@@ -27,6 +27,8 @@ $(".sidebar-dropdown > a").click(function() {
     $(".page-wrapper").addClass("toggled");
   });
   
+
+  
   $(document).ready(function () {
     setTimeout(function() {$(".page-wrapper").removeClass("toggled")},1500);
   });

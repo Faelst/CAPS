@@ -1,4 +1,7 @@
+
+
 var contadorFlag = 0;
+
 $(document).ready(function () {
 
     
@@ -55,7 +58,7 @@ $(document).ready(function () {
             }
         });
     }else {
-        alert("Cadastre as informações do tecnico Conrretamente.");
+        alert("Cadastre as informações do tecnico Corretamente.");
     }
 
     

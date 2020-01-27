@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
     $('#example').DataTable( {
         
@@ -31,5 +31,7 @@ $(document).ready(function() {
     var table = $('#example').DataTable();
  
     table.columns(0).order( 'desc' ).draw();
-    
-} );
+
+    $( "#example tbody tr " ).on( "click", function() {
+        alert($( this ).find("td:first").text());
+      });
