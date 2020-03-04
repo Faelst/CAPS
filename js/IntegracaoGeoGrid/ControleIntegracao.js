@@ -9,7 +9,9 @@ $('#btnCadastrar').click(function (e) {
   /* fazer verificação das o tipo de procedimento que sera vinculado cliente na CTO */
   if ($('#selectProcedimento').val() == 1) {
     e.preventDefault()
-    vincularClienteCTO()
+    if( $('#selecionarClienteGeo').text() !== "" ){
+      vincularClienteCTO();
+    };
   }
 })
 
@@ -30,7 +32,7 @@ $('#nomeCliente').keyup(function () {
 })
 
 $('#nomeCliente').change(function () {
-  var idSelecionado
+  var idSelecionado;
 
   popularClientes($(this).val())
 

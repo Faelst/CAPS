@@ -66,6 +66,8 @@ function cadastrarProcedimentoCto(){
         $regiao = 6;
     } else if ($cidadeProc == "14") {
         $regiao = 6;
+    } else if ($cidadeProc == "15") {
+        $regiao = 7;
     }
 
     //Hpedido_ativacao

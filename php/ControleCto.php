@@ -441,7 +441,7 @@ function cadastrarCto()
     }
 
     if (isset($_POST['txtLivres']) && strlen($_POST['txtLivres']) >= 1 && $_POST['txtLivres'] !== "") {
-        $txtLivres = utf8_decode($_POST['txtLivres']);
+        $txtLivres = intval(utf8_decode($_POST['txtLivres']) + 1);
         $sql .= " $txtLivres , ";
     } else {
         echo "Informe informações da fibra Corretamente";
@@ -449,7 +449,7 @@ function cadastrarCto()
     }
 
     if (isset($_POST['txtOcupados']) && strlen($_POST['txtOcupados']) >= 1 && $_POST['txtOcupados'] !== "") {
-        $txtOcupados = utf8_decode($_POST['txtOcupados']);
+        $txtOcupados = intval(utf8_decode($_POST['txtOcupados']) - 1);
         $sql .= " $txtOcupados , ";
     } else {
         echo "Informe informações da fibra Corretamente";

@@ -169,6 +169,7 @@ include("./php/verificacaoLogin.php");
 															<option value="11">Aparecida</option>
 															<option value="12">Tremenbé</option>
 															<option value="13">Predrinhas</option>
+															<option value="15">Santa Isabel</option>
 														</select>
 													</div>
 												</div>
@@ -195,7 +196,7 @@ include("./php/verificacaoLogin.php");
 													da CTO</label>
 												<div class="col-md-6">
 													<div class="input-group">
-														<input type="text" class="form-control" id='numeroCto' placeholder="" aria-label="" aria-describedby="button-addon2" style="background-repeat:no-repeat;background-position: 98% 50%; padding-right: 30px; border-color: rgb(255, 165, 0);">
+														<input type="text" class="form-control numeroCto" id='numeroCto' placeholder="" aria-label="" aria-describedby="button-addon2" style="background-repeat:no-repeat;background-position: 98% 50%; padding-right: 30px; border-color: rgb(255, 165, 0);">
 														<div class="input-group-append">
 															<button class="btn btn-outline-secondary text-body" id="btnAbrirMoldal" type="button" id="button-addon2" data-toggle="modal" data-target="#modalCto" style="border-color: rgb(255, 165, 0);">Cadastrar
 																CTO</button>
@@ -289,8 +290,7 @@ include("./php/verificacaoLogin.php");
 
 																	<input type="text" id='txtOcupados' pattern="[0-9]" class="form-control mx-2 rounded" placeholder="Vagas Ocupadas" aria-label="Username" aria-describedby="basic-addon1" disabled>
 																</div>
-																<p class="mt-2 text-danger"> OBS: Ao cadastrar a CTO , cadastre as vagas livres com um a mais que o tecnico informa-los.</p>
-																<p class="mt-1 text-danger">Exemplo: se ha 8 vagas ocupadas, cadastre a CTO com 1 vaga livre e 7 ocupadas.</p>
+																
 															</div>
 
 
